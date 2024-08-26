@@ -1,25 +1,23 @@
-import Project1 from "./Project1"
-import Project2 from "./Project2"
-import Project3 from "./Project3"
-import Project4 from "./Project4"
-import Project5 from "./Project5"
-import Project6 from "./Project6"
-function Project()
-{
+function Project(props){ //props={img:weather}
     return(
-    <>
-    <div id="projects" className="pt-20 md:pt-38  project " >
-        <h1 className="text-3xl text-[#ff8484] font-medium text-center mb-5 ">My Projects</h1>
-        <div  className="flex justify-center flex-wrap gap-6 ">
-               <Project1/>
-               <Project2/>
-               <Project3/>
-               <Project4/>
-               <Project5/>
-               <Project6/>
-        </div>
-    </div>
-    </>
+        <>
+            <div className="m-3 border border-gray-200 p-2 pro-img hover:shadow-lg cursor-pointer">
+                <div id="projects">
+                    <img src={props.img} alt="" className=" " />
+                    <h1 className="text-center font-medium text-xl mt-1">{props.title}</h1>
+                    <p className="text-xl text-center font-semibold text-gray-500">{props.subtitle}</p>
+                </div>
+                <div className="flex justify-center gap-2 mt-1 ">
+                    <p className=" w-fit border border-gray-400 shadow-sm px-2 p-1 rounded-md">{props.skill1}</p>
+                    <p className=" w-fit border border-gray-400 shadow-sm px-2 p-1 rounded-md">{props.skill2}</p>
+                    <p className=" w-fit border border-gray-400 shadow-sm px-2 p-1 rounded-md">{props.skill3}</p>
+                </div>
+                <div className="mt-4 flex justify-center gap-2 mb-5">
+                    <a href={props.live} target="_blank" className="text-center border border-x-2 border-red-500 p-1 px-6 rounded-lg w-36"><button>Live</button></a>
+                    <a href={props.repo} target="_blank" className="text-center border border-x-2 border-red-500 p-1 px-6 rounded-lg w-36 bg-red-500 text-white"><button>Repo </button></a>
+                </div>
+            </div>
+        </>
     )
 }
 export default Project

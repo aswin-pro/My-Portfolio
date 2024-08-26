@@ -17,7 +17,6 @@ function Floatinglogo() {
             </div>
             <div>
                 <a href="https://github.com/aswin-pro" target="_blank" className="text-4xl"> <FaGithubSquare />
-
                 </a>
             </div>
         </div>

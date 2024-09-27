@@ -5,7 +5,7 @@ import { FaGithubSquare } from "react-icons/fa";
 function Floatinglogo() {
     return (
         <>
-        <div className=" hidden md:flex flex-col  gap-1 fixed logo border border-gray-200 p-2 ">
+        <div className="hidden md:flex flex-col  gap-1 fixed logo border border-gray-200 dark:border-gray-500 p-2 ">
             <div>
                 <a href="https://wa.me/919789473408" target="_blank" rel="noopener noreferrer" className="text-4xl">
                     <FaWhatsappSquare />

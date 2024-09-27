@@ -17,7 +17,7 @@ import tripadvisor from "../assets/images/tripadvisor.png"
 
 function Landing() {
     return (
-        <>
+        <div className=" dark:bg-gray-950 dark:text-gray-400" > 
             <Navbar />
             <Home />
             <About />
@@ -38,7 +38,7 @@ function Landing() {
             <Contact />
             <Footer />
             <Floatinglogo />
-        </>
+        </div>
     )
 }
 export default Landing

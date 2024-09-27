@@ -4,7 +4,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 function Footer(){
     return(
-    <footer className="border shadow-lg bg-gray-50 py-6">
+    <footer className="shadow-lg bg-gray-50 py-6 dark:bg-gray-950">
         <div className="container mx-auto text-center">
             <p>&copy; {new Date().getFullYear()} Aswin. All Rights Reserved.</p>
             <p>Frontend Developer | Passionate about building interactive and responsive web applications.</p>

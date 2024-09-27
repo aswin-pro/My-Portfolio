@@ -1,11 +1,11 @@
-import img from "../assets/images/yellow.png"
+import img from "../assets/images/my_pro.png"
 function About() {
     return (
-        <>
+        <div className=" dark:bg-gray-950">
 
-            <div id="aboutme" className=" flex about pt-20 md:pt-38  md:mt-36  justify-center gap-20 ">
+            <div id="aboutme" className=" flex about pt-20 md:pt-38  md:mt-36  justify-center gap-20  ">
 
-                <div className="bg-gray-50 flex justify-center gap-20 py-2">
+                <div className="bg-gray-50 dark:bg-gray-950 flex justify-center gap-20 py-2">
                 <div className="about-one w-96 text-center md:text-justify">
                     <h1 className="text-center text-3xl font-medium text-[#ff8484] mb-5">About Me</h1>
                     <p className="ml-30  md:text-xl">I am a Frontend Developer with a passion for creating user-friendly and innovative web solutions. With a strong focus on design and creativity, I build visually appealing and functional websites that solve real-world problems and enhance user experiences. I am committed to staying current with the latest web development trends to ensure my work consistently exceeds expectations.
@@ -18,12 +18,12 @@ function About() {
 
                 </div>
                 <div className="hidden  md:flex about-two">
-                    <img src={img} alt="progile-image " className="mt-16 w-52 h-48 rounded-r-3xl botder border-x-4" />
+                    <img src={img} alt="progile-image " className="mt-16 w-40 h-48 rounded-r-3xl dark:opacity-[0.6] border filter drop-shadow-[0px_2px_4px_#ffffff]" />
                 </div>
                 </div>
             </div>
 
-        </>
+        </div>
     )
 }
 export default About

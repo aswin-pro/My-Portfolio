@@ -11,6 +11,7 @@ This is a personal portfolio website created using React.js and Tailwind CSS. Th
 - Contact Form: A form that users can fill out to contact me. It uses EmailJS to send emails directly from the website.
 - Download Resume: Users can download my resume in PDF format.
 - View Repositories: Direct links to the repositories of my projects on GitHub.
+- Dark Mode:A user-friendly dark mode feature that allows visitors to switch between light and dark themes for improved accessibility and a personalized browsing experience. The theme    preference is saved locally, ensuring a consistent experience across sessions.
 
 ## Technologies Used
 - React.js: For building the user interface and managing the state of the application.

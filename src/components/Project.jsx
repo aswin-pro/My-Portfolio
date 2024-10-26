@@ -1,9 +1,9 @@
 function Project(props){ //props={img:weather}
     return(
         <>
-            <div className="m-3 border border-gray-200 dark:border-gray-500 p-2 pro-img hover:shadow-lg cursor-pointer rounded-lg" data-aos="zoom-in" >
+            <div className="m-3 border border-gray-200 dark:border-gray-500 p-2 pro-img hover:shadow-lg  rounded-lg" data-aos="zoom-in" >
                 <div id="projects">
-                    <img src={props.img} alt="" className=" " />
+                    <img src={props.img} alt="" className="" />
                     <h1 className="text-center font-medium text-xl mt-1">{props.title}</h1>
                     <p className="text-xl text-center font-semibold text-gray-500">{props.subtitle}</p>
                 </div>

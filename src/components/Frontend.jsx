@@ -6,8 +6,8 @@ import tailwind from "../assets/images/tailwind.png"
 
 function Frontend(){
     return(
-        <>
-        <div className="mt-10 text-center m-3 p-3 pb-10  border rounded-lg border-gray-200 dark:border-gray-500" data-aos="fade-right"> 
+
+        <div className="mt-10 text-center m-3 p-3 pb-10  border rounded-lg border-gray-200 dark:border-gray-500"> 
             <h1 className="py-2 font-medium text-xl">Frontend</h1>
         <div className=" grid grid-cols-3 gap-2 w-62 " >
             <div className="flex flex-col items-center shadow-md border dark:border-gray-500 p-2">
@@ -32,7 +32,7 @@ function Frontend(){
             </div>
         </div>
         </div>
-        </>
+
     )
 }
 export default Frontend

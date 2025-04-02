@@ -13,24 +13,24 @@ function Navbar() {
         setIsMenuOpen(false);
     };
 
-    //for darkmode
-    const darkModePreference = localStorage.getItem('darkMode');
+    // //for darkmode
+    // const darkModePreference = localStorage.getItem('darkMode');
 
-    const initialDarkmode = darkModePreference === 'true';
+    // const initialDarkmode = darkModePreference === 'true';
 
-    const [isDarkMode, setIsDarkMode] = useState(initialDarkmode)
+    // const [isDarkMode, setIsDarkMode] = useState(initialDarkmode)
 
-    useEffect(()=>{
-        if(isDarkMode){
-            document.documentElement.classList.add('dark')
-            localStorage.setItem('darkMode','true')
-        }
-        else
-        {
-            document.documentElement.classList.remove('dark')
-            localStorage.setItem('darkMode','false')
-        }
-    })
+    // useEffect(()=>{
+    //     if(isDarkMode){
+    //         document.documentElement.classList.add('dark')
+    //         localStorage.setItem('darkMode','true')
+    //     }
+    //     else
+    //     {
+    //         document.documentElement.classList.remove('dark')
+    //         localStorage.setItem('darkMode','false')
+    //     }
+    // })
 
     return (
         <nav className="shadow-lg border-b-black fixed top-0 w-full bg-white  z-10 dark:bg-gray-950 ">
@@ -42,13 +42,13 @@ function Navbar() {
                         {isMenuOpen ? 'X' : '☰'}
                     </button>
                     {/* dark mode toggle */}
-                    <div className='md:hidden flex items-center '>
+                    {/* <div className='md:hidden flex items-center '>
                         <DarkModeToggle
                             onChange={setIsDarkMode}
                             checked={isDarkMode}
                             size={50}
                         />
-                    </div>
+                    </div> */}
                 </div>
                 {/* Hidden on mobile, visible on desktop */}
                 <div className="hidden md:flex gap-9 items-center pt-2 dark:text-white">
@@ -57,13 +57,13 @@ function Navbar() {
                     <a href="#skills" className="hover-link">Skills</a>
                     <a href="#projects" className="hover-link">Projects</a>
                     <a href="#contact" className="hover-link">Contact</a>
-                    <div className='flex items-center'>
+                    {/* <div className='flex items-center'>
                         <DarkModeToggle
                             onChange={setIsDarkMode}
                             checked={isDarkMode}
                             size={60}
                         />
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

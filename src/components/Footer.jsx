@@ -7,7 +7,7 @@ function Footer(){
     <footer className="shadow-lg bg-gray-50 py-6 dark:bg-gray-950">
         <div className="container mx-auto text-center">
             <p>&copy; {new Date().getFullYear()} Aswin. All Rights Reserved.</p>
-            <p>Frontend Developer | Passionate about building interactive and responsive web applications.</p>
+            <p>Full Stack Developer | Passionate about building scalable, interactive, and responsive web applications.</p>
             <div className="mt-1">
                 <p>Email: <a href="mailto:aswinramesh2016@gmail.com" className="text-blue-600">aswinramesh2016@gmail.com</a></p>
                 <p>Phone: +91 97894 73408</p>
